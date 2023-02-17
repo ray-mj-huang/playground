@@ -7,7 +7,8 @@ import {
   Products,
   Contact,
   Whoops404,
-  History
+  History,
+  CubicMobilePage
 } from './pages';
 
 function App() {
@@ -40,10 +41,13 @@ function App() {
           element={<Contact />}
         />
         <Route
+          path="cubicmobile"
+          element={<CubicMobilePage />}
+        />
+        <Route
           path="*"
           element={<Whoops404 />}
-        >
-        </Route>
+        />
       </Routes>
     </>
   );

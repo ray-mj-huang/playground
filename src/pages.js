@@ -1,53 +1,84 @@
 import React from 'react';
 import { useLocation, Outlet } from 'react-router-dom';
+import Menu from './components/Menu';
+import CubicMobile from './components/CubicMobile';
+
+const containerStyle = {
+  position: 'absolute',
+  right: 0,
+  width: 'calc(100% - 230px)'
+}
+
+function PageTemplate({ children }) {
+  return (
+    <>
+      <Menu />
+      <div style={containerStyle}>
+        {children}
+      </div>
+    </>
+  )
+}
 
 export function Home() {
   return (
-    <div>
-      <h1>[Company Website]</h1>
-    </div>
+    <PageTemplate>
+      <div>
+        <h1>[Home]</h1>
+      </div>
+    </PageTemplate>
   );
 }
 
 export function About() {
   return (
-    <div>
-      <h1>[About]</h1>
-      <Outlet />
-    </div>
+    <PageTemplate>
+      <div>
+        <h1>[About]</h1>
+        <Outlet />
+      </div>
+    </PageTemplate>
   );
 }
 
 export function Events() {
   return (
-    <div>
-      <h1>[Events]</h1>
-    </div>
+    <PageTemplate>
+      <div>
+        <h1>[Events]</h1>
+      </div>
+    </PageTemplate>
   );
 }
 
 export function Products() {
   return (
-    <div>
-      <h1>[Products]</h1>
-    </div>
+    <PageTemplate>
+      <div>
+        <h1>[Products]</h1>
+      </div>
+    </PageTemplate>
   );
 }
 
 export function Contact() {
   return (
-    <div>
-      <h1>[Contact]</h1>
-    </div>
+    <PageTemplate>
+      <div>
+        <h1>[Contact]</h1>
+      </div>
+    </PageTemplate>
   );
 }
 
 export function Whoops404() {
   let location = useLocation();
   return (
-    <div>
-      <h1>Resource not found at {location.pathname}</h1>
-    </div>
+    <PageTemplate>
+      <div>
+        <h1>Resource not found at {location.pathname}</h1>
+      </div>
+    </PageTemplate>
   );
 }
 
@@ -62,4 +93,10 @@ export function History() {
   );
 }
 
-
+export function CubicMobilePage() {
+  return (
+    <PageTemplate>
+      <CubicMobile />
+    </PageTemplate>
+  );
+}
