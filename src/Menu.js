@@ -32,6 +32,7 @@ export default function Menu() {
       <Link style={linkStyle} to="/products">Products</Link>
       <Link style={linkStyle} to="/contact">Contact</Link>
       <Link style={linkStyle} to="/cubicmobile">CubicMobile</Link>
+      <Link style={linkStyle} to="/dashboard">Dashboard</Link>
     </nav>
   )
 }

@@ -8,7 +8,8 @@ import {
   Contact,
   Whoops404,
   History,
-  CubicMobilePage
+  CubicMobilePage,
+  DashboardPage
 } from './pages';
 
 function App() {
@@ -43,6 +44,10 @@ function App() {
         <Route
           path="cubicmobile"
           element={<CubicMobilePage />}
+        />
+        <Route
+          path="dashboard"
+          element={<DashboardPage />}
         />
         <Route
           path="*"

@@ -1,7 +1,10 @@
 import React from 'react';
 import { useLocation, Outlet } from 'react-router-dom';
-import Menu from './components/Menu';
+import Menu from './Menu';
 import CubicMobile from './components/CubicMobile';
+import { Dashboard } from './components/Dashboard';
+
+
 
 const containerStyle = {
   position: 'absolute',
@@ -98,5 +101,11 @@ export function CubicMobilePage() {
     <PageTemplate>
       <CubicMobile />
     </PageTemplate>
+  );
+}
+
+export function DashboardPage() {
+  return (
+    <Dashboard />
   );
 }

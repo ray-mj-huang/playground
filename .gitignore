@@ -26,3 +26,7 @@ yarn-error.log*
 .firebase/
 .firebaserc
 .env
+
+# tailwind
+tailwind.css
+tailwind.config.js
