@@ -3,6 +3,7 @@ import { useLocation, Outlet } from 'react-router-dom';
 import Menu from './Menu';
 import CubicMobile from './components/CubicMobile';
 import { Dashboard } from './components/Dashboard';
+import StarRating from './components/xxx/StarRating';
 
 
 
@@ -107,5 +108,13 @@ export function CubicMobilePage() {
 export function DashboardPage() {
   return (
     <Dashboard />
+  );
+}
+
+export function StarRatingPage() {
+  return (
+    <PageTemplate>
+      <StarRating />
+    </PageTemplate>
   );
 }

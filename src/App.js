@@ -9,7 +9,8 @@ import {
   Whoops404,
   History,
   CubicMobilePage,
-  DashboardPage
+  DashboardPage,
+  StarRatingPage
 } from './pages';
 
 function App() {
@@ -48,6 +49,10 @@ function App() {
         <Route
           path="dashboard"
           element={<DashboardPage />}
+        />
+        <Route
+          path="starrating"
+          element={<StarRatingPage />}
         />
         <Route
           path="*"
