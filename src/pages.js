@@ -1,11 +1,7 @@
 import React from 'react';
 import { useLocation, Outlet } from 'react-router-dom';
 import Menu from './Menu';
-import CubicMobile from './components/CubicMobile';
-import { Dashboard } from './components/Dashboard';
 import StarRating from './components/xxx/StarRating';
-
-
 
 const containerStyle = {
   position: 'absolute',
@@ -94,20 +90,6 @@ export function History() {
         <p>asadoj oijoi ioejowij oiej oijew oijew oije oeij oiej owiej oewij oewij oewi joewij</p>
       </div>
     </section>
-  );
-}
-
-export function CubicMobilePage() {
-  return (
-    <PageTemplate>
-      <CubicMobile />
-    </PageTemplate>
-  );
-}
-
-export function DashboardPage() {
-  return (
-    <Dashboard />
   );
 }
 
