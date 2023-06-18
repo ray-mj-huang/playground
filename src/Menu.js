@@ -56,6 +56,10 @@ const navData = [
     url: '/3-2-1',
     title: '3-2-1'
   },
+  {
+    url: '/3-2-2',
+    title: '3-2-2'
+  },
 ]
 
 export default function Menu() {

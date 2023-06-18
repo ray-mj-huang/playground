@@ -15,6 +15,7 @@ import StarRating from './components/xxx/StarRating';
 import Picture from './react-dev/3-1-1';
 import EditProfile from './react-dev/3-1-2';
 import ColorfulClock from './react-dev/3-2-1';
+import TravelPlan from './react-dev/3-2-2';
 
 function App() {
   return (
@@ -60,6 +61,10 @@ function App() {
         <Route
           path="3-2-1"
           element={<PageTemplate children={<ColorfulClock />} />}
+        />
+        <Route
+          path="3-2-2"
+          element={<PageTemplate children={<TravelPlan />} />}
         />
         <Route
           path="*"
