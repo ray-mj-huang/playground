@@ -1,5 +1,4 @@
 import { useState } from "react";
-import '../react-quiz.css';
 import './3-1-1.css';
 
 export default function Picture() {

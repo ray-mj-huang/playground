@@ -1,0 +1,14 @@
+.quiz-bg {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.quiz-title {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+}

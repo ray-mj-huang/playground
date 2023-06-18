@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
+import './react-quiz.css';
 import {
   PageTemplate,
   Home,
@@ -12,6 +13,7 @@ import {
 } from './pages';
 import StarRating from './components/xxx/StarRating';
 import Picture from './react-dev/3-1-1';
+import EditProfile from './react-dev/3-1-2';
 
 function App() {
   return (
@@ -49,6 +51,10 @@ function App() {
         <Route
           path="3-1-1"
           element={<PageTemplate children={<Picture />} />}
+        />
+        <Route
+          path="3-1-2"
+          element={<PageTemplate children={<EditProfile />} />}
         />
         <Route
           path="*"
