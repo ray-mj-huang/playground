@@ -12,13 +12,13 @@ import {
   History,
 } from './pages';
 import StarRating from './components/xxx/StarRating';
-import Picture from './react-dev/3-1-1';
-import EditProfile from './react-dev/3-1-2';
-import ColorfulClock from './react-dev/3-2-1';
-import TravelPlan from './react-dev/3-2-2';
-import StarMailClient from './react-dev/3-2-3';
-import MutipleSelectionMailClient from './react-dev/3-2-4';
-import SyncedInputs from './react-dev/3-3-1';
+import Picture from './react-dev-quiz/3-1-1';
+import EditProfile from './react-dev-quiz/3-1-2';
+import ColorfulClock from './react-dev-quiz/3-2-1';
+import TravelPlan from './react-dev-quiz/3-2-2';
+import StarMailClient from './react-dev-quiz/3-2-3';
+import MutipleSelectionMailClient from './react-dev-quiz/3-2-4';
+import SyncedInputs from './react-dev-quiz/3-3-1';
 
 
 function App() {
