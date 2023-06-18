@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import {
+  PageTemplate,
   Home,
   About,
   Events,
@@ -8,8 +9,8 @@ import {
   Contact,
   Whoops404,
   History,
-  StarRatingPage
 } from './pages';
+import StarRating from './components/xxx/StarRating'
 
 function App() {
   return (
@@ -42,7 +43,11 @@ function App() {
         />
         <Route
           path="starrating"
-          element={<StarRatingPage />}
+          element={
+            <PageTemplate>
+              <StarRating />
+            </PageTemplate>
+          }
         />
         <Route
           path="*"

@@ -9,7 +9,7 @@ const containerStyle = {
   width: 'calc(100% - 230px)'
 }
 
-function PageTemplate({ children }) {
+export function PageTemplate({ children }) {
   return (
     <>
       <Menu />
