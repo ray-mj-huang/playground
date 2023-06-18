@@ -18,6 +18,7 @@ import ColorfulClock from './react-dev/3-2-1';
 import TravelPlan from './react-dev/3-2-2';
 import StarMailClient from './react-dev/3-2-3';
 import MutipleSelectionMailClient from './react-dev/3-2-4';
+import SyncedInputs from './react-dev/3-3-1';
 
 
 function App() {
@@ -75,6 +76,14 @@ function App() {
         />
         <Route
           path="3-2-4"
+          element={<PageTemplate children={<MutipleSelectionMailClient />} />}
+        />
+        <Route
+          path="3-3-1"
+          element={<PageTemplate children={<SyncedInputs />} />}
+        />
+        <Route
+          path="3-3-2"
           element={<PageTemplate children={<MutipleSelectionMailClient />} />}
         />
         <Route
