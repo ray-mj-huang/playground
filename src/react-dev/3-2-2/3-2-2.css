@@ -2,4 +2,4 @@
 
 #css3-2-2 li { list-style-type: none; }
 
-#css3-2-2 ul, li { margin: 0; padding: 0; }
+#css3-2-2 ul, #css3-2-2 li { margin: 0; padding: 0; }
