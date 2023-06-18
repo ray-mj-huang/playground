@@ -10,7 +10,8 @@ import {
   Whoops404,
   History,
 } from './pages';
-import StarRating from './components/xxx/StarRating'
+import StarRating from './components/xxx/StarRating';
+import Picture from './react-dev/3-1-1';
 
 function App() {
   return (
@@ -43,11 +44,11 @@ function App() {
         />
         <Route
           path="starrating"
-          element={
-            <PageTemplate>
-              <StarRating />
-            </PageTemplate>
-          }
+          element={<PageTemplate children={<StarRating />} />}
+        />
+        <Route
+          path="3-1-1"
+          element={<PageTemplate children={<Picture />} />}
         />
         <Route
           path="*"
