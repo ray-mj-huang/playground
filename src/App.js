@@ -17,6 +17,7 @@ import EditProfile from './react-dev/3-1-2';
 import ColorfulClock from './react-dev/3-2-1';
 import TravelPlan from './react-dev/3-2-2';
 import StarMailClient from './react-dev/3-2-3';
+import MutipleSelectionMailClient from './react-dev/3-2-4';
 
 
 function App() {
@@ -71,6 +72,10 @@ function App() {
         <Route
           path="3-2-3"
           element={<PageTemplate children={<StarMailClient />} />}
+        />
+        <Route
+          path="3-2-4"
+          element={<PageTemplate children={<MutipleSelectionMailClient />} />}
         />
         <Route
           path="*"
