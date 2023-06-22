@@ -20,7 +20,7 @@ import StarMailClient from './react-dev-quiz/3-2-3';
 import MutipleSelectionMailClient from './react-dev-quiz/3-2-4';
 import SyncedInputs from './react-dev-quiz/3-3-1';
 import FilterableList from './react-dev-quiz/3-3-2';
-
+import Hinter from './react-dev-quiz/3-4-1';
 
 function App() {
   return (
@@ -86,6 +86,10 @@ function App() {
         <Route
           path="3-3-2"
           element={<PageTemplate children={<FilterableList />} />}
+        />
+        <Route
+          path="3-4-1"
+          element={<PageTemplate children={<Hinter />} />}
         />
         <Route
           path="*"
