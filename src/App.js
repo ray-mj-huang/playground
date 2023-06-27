@@ -21,11 +21,16 @@ import MutipleSelectionMailClient from './react-dev-quiz/3-2-4';
 import SyncedInputs from './react-dev-quiz/3-3-1';
 import FilterableList from './react-dev-quiz/3-3-2';
 import Hinter from './react-dev-quiz/3-4-1';
+import AppWorks from './components/AppWorks';
 
 function App() {
   return (
     <>
       <Routes>
+        <Route
+          path="/appworks"
+          element={<AppWorks />}
+        />
         <Route
           path="/"
           element={<Home />}
