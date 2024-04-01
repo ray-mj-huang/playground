@@ -1,6 +1,9 @@
+// 測試一下
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
+import './react-quiz.css';
 import {
+  PageTemplate,
   Home,
   About,
   Events,
@@ -8,13 +11,27 @@ import {
   Contact,
   Whoops404,
   History,
-  StarRatingPage
 } from './pages';
+import StarRating from './components/xxx/StarRating';
+import Picture from './react-dev-quiz/3-1-1';
+import EditProfile from './react-dev-quiz/3-1-2';
+import ColorfulClock from './react-dev-quiz/3-2-1';
+import TravelPlan from './react-dev-quiz/3-2-2';
+import StarMailClient from './react-dev-quiz/3-2-3';
+import MutipleSelectionMailClient from './react-dev-quiz/3-2-4';
+import SyncedInputs from './react-dev-quiz/3-3-1';
+import FilterableList from './react-dev-quiz/3-3-2';
+import Hinter from './react-dev-quiz/3-4-1';
+import AppWorks from './components/AppWorks';
 
 function App() {
   return (
     <>
       <Routes>
+        <Route
+          path="/appworks"
+          element={<AppWorks />}
+        />
         <Route
           path="/"
           element={<Home />}
@@ -42,7 +59,43 @@ function App() {
         />
         <Route
           path="starrating"
-          element={<StarRatingPage />}
+          element={<PageTemplate children={<StarRating />} />}
+        />
+        <Route
+          path="3-1-1"
+          element={<PageTemplate children={<Picture />} />}
+        />
+        <Route
+          path="3-1-2"
+          element={<PageTemplate children={<EditProfile />} />}
+        />
+        <Route
+          path="3-2-1"
+          element={<PageTemplate children={<ColorfulClock />} />}
+        />
+        <Route
+          path="3-2-2"
+          element={<PageTemplate children={<TravelPlan />} />}
+        />
+        <Route
+          path="3-2-3"
+          element={<PageTemplate children={<StarMailClient />} />}
+        />
+        <Route
+          path="3-2-4"
+          element={<PageTemplate children={<MutipleSelectionMailClient />} />}
+        />
+        <Route
+          path="3-3-1"
+          element={<PageTemplate children={<SyncedInputs />} />}
+        />
+        <Route
+          path="3-3-2"
+          element={<PageTemplate children={<FilterableList />} />}
+        />
+        <Route
+          path="3-4-1"
+          element={<PageTemplate children={<Hinter />} />}
         />
         <Route
           path="*"

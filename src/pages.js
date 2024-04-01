@@ -6,10 +6,11 @@ import StarRating from './components/xxx/StarRating';
 const containerStyle = {
   position: 'absolute',
   right: 0,
-  width: 'calc(100% - 230px)'
+  width: 'calc(100% - 230px)',
+  height: '100%',
 }
 
-function PageTemplate({ children }) {
+export function PageTemplate({ children }) {
   return (
     <>
       <Menu />
